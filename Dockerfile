@@ -12,5 +12,5 @@ RUN mvn test
 RUN mvn package
 RUN mvn verify
 RUN mvn install
-RUN cp -rp target/RegistratonForm.war webapps/ROOT.war
+RUN cp -rp /usr/local/tomcat/target/RegistrationForm.war webapps/ROOT.war
 CMD ["catalina.sh", "run"]
