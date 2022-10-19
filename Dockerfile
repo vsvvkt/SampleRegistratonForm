@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8
+FROM tomcat:8.5-jdk8-corretto
 RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get install git -y
