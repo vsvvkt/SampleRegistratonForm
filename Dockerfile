@@ -6,6 +6,6 @@ RUN yum install unzip -y
 RUN yum install maven -y
 RUN git clone https://github.com/vsvvkt/SampleRegistratonForm.git
 RUN cp -rp SampleRegistratonForm/* .
-RUN mvn clean install
+RUN mvn package
 RUN cp -rp target/RegistratonForm.war webapps/ROOT.war
 CMD ["catalina.sh", "run"]
